@@ -1,10 +1,7 @@
-import Navigation from "./Navigation";
-
-function Header() {
+function Header(props) {
     return (
         <div>
-            < Navigation />
-            <h1>Camille Bagnani</h1>
+            <h1>{props.pageTitle}</h1>
         </div>
     )
 }
