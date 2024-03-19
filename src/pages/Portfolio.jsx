@@ -22,14 +22,14 @@ export default function Portfolio() {
                 />
 
                 <Project
-                    title='Gym Personal Record Tracker'
+                    title='Gym Lift Tracker'
                     imageLink='../public/images/hellsgatedashboard.png'
                     deployedApp='https://github.com/camillebagnani/Hells-Gate-PR'
                     repo='https://github.com/camillebagnani/Hells-Gate-PR'
                 />
 
                 <Project
-                    title='NoSQL Social Network API'
+                    title='Social Network API'
                     imageLink='../public/images/nosql-insomnia-routes.png'
                     deployedApp='https://github.com/camillebagnani/nosql-social-network-api'
                     repo='https://github.com/camillebagnani/nosql-social-network-api'
