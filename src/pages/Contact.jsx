@@ -3,15 +3,15 @@ import Form from "../components/Form"
 
 export default function Contact() {
     return (
-        <div>
+        <div className="contactPage">
             <Header pageTitle={"Contact"} />
             <div className="contactPageContents">
-            <div className="formContainer">
-                <Form />
-            </div>
-            <div>
-                <p>You can also email me by clicking the mail icon in the footer.</p>
-            </div>
+                <div className="formContainer">
+                    <Form />
+                </div>
+                <div className="contact-text">
+                    You can also email me by clicking the mail icon in the footer.
+                </div>
             </div>
         </div>
     )

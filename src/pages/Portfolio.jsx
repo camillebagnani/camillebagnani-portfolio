@@ -9,48 +9,51 @@ export default function Portfolio() {
 
                 <Project
                     title='Weather Dashboard'
-                    imageLink='../public/images/weather-dashboard.png'
+                    imageLink='../public/images/weatherdashboard.gif'
+                    highlights='Third-party APIs, Bootstrap, jQuery'
                     deployedApp='https://camillebagnani.github.io/weather-dashboard/'
                     repo='https://github.com/camillebagnani/weather-dashboard'
                 />
 
                 <Project
                     title='Tech Blog'
-                    imageLink='../public/images/techblog.png'
-                    deployedApp='https://obscure-hollows-81993-50a0068ee144.herokuapp.com/login'
+                    imageLink='../public/images/thetechblog.gif'
+                    highlights='Node, Express, MySQL, Sequelize, Bcrypt'
+                    deployedApp='https://obscure-hollows-81993-50a0068ee144.herokuapp.com/'
                     repo='https://github.com/camillebagnani/tech_blog'
                 />
 
                 <Project
                     title='Gym Lift Tracker'
-                    imageLink='../public/images/hellsgatedashboard.png'
-                    deployedApp='https://github.com/camillebagnani/Hells-Gate-PR'
+                    imageLink='../public/images/hellsgatepr.gif'
+                    highlights='Node, Express, MySQL, Sequelize, Bcrypt, Chart.js'
+                    deployedApp='https://secret-spire-07174-9e0cafb948bb.herokuapp.com/'
                     repo='https://github.com/camillebagnani/Hells-Gate-PR'
                 />
 
                 <Project
                     title='Social Network API'
-                    imageLink='../public/images/nosql-insomnia-routes.png'
-                    deployedApp='https://github.com/camillebagnani/nosql-social-network-api'
+                    imageLink='../public/images/socialnetworkapi.gif'
+                    highlights='Node, Express, NoSQL, MongoDB, Mongoose'
                     repo='https://github.com/camillebagnani/nosql-social-network-api'
                 />
 
                 <Project
                     title='Work Day Scheduler'
-                    imageLink='../public/images/workdayscheduler.png'
+                    imageLink='../public/images/workdayscheduler.gif'
+                    highlights='Third-party APIs, Day.js, jQuery'
                     deployedApp='https://camillebagnani.github.io/work-day-scheduler/'
                     repo='https://github.com/camillebagnani/work-day-scheduler'
                 />
 
                 <Project
-                    title='Employee Tracker'
-                    imageLink='../public/images/applicationoptions.png'
-                    deployedApp='https://github.com/camillebagnani/employee_tracker'
-                    repo='https://github.com/camillebagnani/employee_tracker'
+                    title='E-Commerce Back End'
+                    imageLink='../public/images/ecommercebackend.gif'
+                    highlights='Node, Express, MySQL, Sequelize, dotenv'
+                    repo='https://github.com/camillebagnani/e-commerce_back_end'
                 />
 
             </div>
-            {/* <Project props={{title: 'Weather Dashboard', imageLink:'../src/public/images/weather-dashboard.png', deployedApp: 'https://camillebagnani.github.io/weather-dashboard/', repo: 'https://github.com/camillebagnani/weather-dashboard'}} /> */}
         </div>
     )
 }

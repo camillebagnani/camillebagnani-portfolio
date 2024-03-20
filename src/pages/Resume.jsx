@@ -26,7 +26,7 @@ export default function Resume() {
                         <li>Git</li>
                         <li>Heroku</li>
                     </ul>
-                    <p className="resume-link">Click <a href="https://docs.google.com/document/d/1dSNiWCcZeV5bt5KILhAf5K_CczSpAzO5CJ9Nf7dnM_U/edit?usp=sharing">here</a> to view my resume!</p>
+                    <p className="resume-link">Click <a href="https://docs.google.com/document/d/1dSNiWCcZeV5bt5KILhAf5K_CczSpAzO5CJ9Nf7dnM_U/edit?usp=sharing" target="_blank" rel="noopener noreferrer">HERE</a> to view my resume!</p>
                 </div>
             </div>
         </div >
