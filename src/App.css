@@ -3,9 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   color: white;
   background-color: #1D5D5D;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-style: normal;
 }
 
 /* .logo {
@@ -54,10 +56,34 @@
   flex-direction: row;
 }
 
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a.active {
+  color: orange;
+}
+
+#navbar a.pending {
+  color: yellow
+}
+
+/* HEADER STYLING */
+.header {
+  font-family: "Goblin One", serif;
+  background-color: orange;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  text-shadow: 4px 2px #CF5C36;
+}
+
 /* FOOTER STYLING */
 footer {
   display: flex;
   justify-content: center;
+  background-color: none;
 }
 .footer-icon-container {
   display: flex;
@@ -174,6 +200,7 @@ label {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  margin: 40px;
 }
 
 .resume-link {

@@ -2,9 +2,11 @@ import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
     return (
-        <ul className="navbar">
+        <ul className="navbar" id="navbar">
             <li>
-                <NavLink to="/" className={{}}>
+                <NavLink to="/" className={({isActive, isPending}) => 
+                isPending ? "pending" : isActive ? "active" : ""
+            }>
                     About
                 </NavLink>
             </li>

@@ -1,7 +1,7 @@
 function Header(props) {
     return (
         <div>
-            <h1>{props.pageTitle}</h1>
+            <h1 className="header">✨{props.pageTitle}✨</h1>
         </div>
     )
 }

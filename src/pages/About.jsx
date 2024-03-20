@@ -3,7 +3,7 @@ import Textbox from "../components/Textbox";
 
 export default function About() {
     return (
-        <div>
+        <div className="about-page">
             <Header pageTitle={"About Me"} />
             <div className="about-contents-container">
                 <div className="profile-pic-container">
