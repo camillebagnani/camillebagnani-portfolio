@@ -1,18 +1,29 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { validateEmail } from "../utils/helpers"
 
 export default function Form() {
-    const [errorMessage, setErrorMessage] = useState('');
+    const [emailErrorMessage, setEmailErrorMessage] = useState('');
+    const [emptyErrorMessage, setEmptyErrorMessage] = useState('');
     const [emailInput, setEmailInput] = useState('');
+
+    const nameInputRef = useRef();
+    const emailInputRef = useRef();
+    const messageInputRef = useRef();
 
     const handleSubmitClick = (e) => {
         e.preventDefault();
 
         if (!validateEmail(emailInput)) {
-            setErrorMessage('Email or username is invalid');
+            setEmailErrorMessage('Email or username is invalid');
             return;
         }
-        setErrorMessage('');
+        setEmailErrorMessage('');
+
+        if (nameInputRef.current.value === '' || emailInputRef.current.value === '' || messageInputRef.current.value === '') {
+            setEmptyErrorMessage('Field cannot be empty!');
+            return;
+        }
+        setEmptyErrorMessage('');
     };
 
     return (
@@ -20,21 +31,26 @@ export default function Form() {
             <form action="" className="contactForm" onSubmit={(e) => handleSubmitClick(e)}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" name="" id="name" />
+                    <input type="text" name="" id="name" ref={nameInputRef} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="text" name="" id="email" onChange={(e) => setEmailInput(e.target.value)} />
+                    <input type="text" name="" id="email" ref={emailInputRef} onChange={(e) => setEmailInput(e.target.value)} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
-                    <textarea type="text" name="" id="message" rows="10" />
+                    <textarea type="text" name="" id="message" rows="10" ref={messageInputRef} />
                 </div>
                 <input type="submit" value="Submit" id="submit-button" />
             </form>
-            {errorMessage && (
+            {emailErrorMessage && (
                 <div>
-                    <p className="error-text">{errorMessage}</p>
+                    <p className="error-text">{emailErrorMessage}</p>
+                </div>
+            )}
+            {emptyErrorMessage && (
+                <div>
+                    <p className="error-text">{emptyErrorMessage}</p>
                 </div>
             )}
         </div>
