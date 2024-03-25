@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Textbox from "../components/Textbox";
+import profilePic from "../../public/images/Camille_Bagnani_Profile_pic.jpeg"
 
 export default function About() {
     return (
@@ -7,7 +8,7 @@ export default function About() {
             <Header pageTitle={"About Me"} />
             <div className="about-contents-container">
                 <div className="profile-pic-container">
-                    <img src="../public/images/Camille_Bagnani_Profile_pic.jpeg" alt="Headshot of Camille wearing a black blazer" className="profile-pic" />
+                    <img src={profilePic} alt="Headshot of Camille wearing a black blazer" className="profile-pic" />
                 </div>
                 <div className="about-textbox">
                     <Textbox className="about-text">

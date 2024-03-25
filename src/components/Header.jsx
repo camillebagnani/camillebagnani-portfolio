@@ -1,7 +1,7 @@
 function Header(props) {
     return (
         <div>
-            <h1 className="header">✨{props.pageTitle}✨</h1>
+            <h1 className="header" id={props.id}>{props.pageTitle}</h1>
         </div>
     )
 }

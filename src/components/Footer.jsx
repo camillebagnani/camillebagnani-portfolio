@@ -1,15 +1,19 @@
+import linkedin from '../../public/images/linkedin.png'
+import github from '../../public/images/github.png'
+import email from '../../public/images/email.png'
+
 export default function Footer() {
     return (
     <footer>
         <div className="footer-icon-container">
             <a href="https://www.linkedin.com/in/camillebagnani/" target="_blank" rel="noopener noreferrer">
-            <img src="../public/images/linkedin.png" alt="LinkedIn logo" className="footer-icon"/>
+            <img src={linkedin} alt="LinkedIn logo" className="footer-icon"/>
             </a>
             <a href="https://github.com/camillebagnani" target="_blank" rel="noopener noreferrer">
-            <img src="../public/images/github.png" alt="GitHub logo"  className="footer-icon"/>
+            <img src={github} alt="GitHub logo"  className="footer-icon"/>
             </a>
             <a href="mailto:camillebagnani@gmail.com">
-            <img src="../public/images/email.png" alt="email icon"  className="footer-icon"/>
+            <img src={email} alt="email icon"  className="footer-icon"/>
             </a>
         </div>
     </footer>)

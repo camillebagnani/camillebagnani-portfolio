@@ -31,6 +31,14 @@ body {
   margin-bottom: 20px;
 }
 
+#navbar-header {
+  font-family: "Goblin One", serif;
+  text-shadow: 4px 2px #CF5C36;
+  list-style: none;
+  font-size: 3vw;
+  margin-top: 10px;
+}
+
 #navbar a {
   text-decoration: none;
   color: white;
@@ -49,6 +57,12 @@ body {
   color: yellow
 }
 
+/* .nav__toggle,
+.nav__close {
+ font-size: 1.5rem;
+ cursor: pointer;
+} */
+
 /* HEADER STYLING */
 .header {
   font-family: "Goblin One", serif;
@@ -63,7 +77,6 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  background-color: none;
 }
 
 .footer-icon-container {
@@ -74,7 +87,8 @@ footer {
   width: 80vw;
   position: fixed;
   bottom: 0;
-  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1D5D5D;
 }
 
 .footer-icon {
@@ -97,11 +111,12 @@ footer {
 }
 
 .about-textbox {
-  margin: 0 20px;
+  margin: 0 20px 60px 20px;
   text-align: justify;
   text-justify: inter-word;
 }
 
+/* PROJECT STYLING */
 .individual-project-container {
   display: flex;
   flex-direction: column;
@@ -200,17 +215,16 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  margin: 10px;
-}
-
-.resume-container p {
-  font-size: 20px;
 }
 
 .resume-link {
   margin-top: 16px;
   margin-bottom: 0;
+}
+
+.resume-text {
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .resume-link a {
@@ -254,23 +268,37 @@ label {
   .contact-text {
     font-size: 20px;
   }
+
+  .contactPageContents {
+    margin-bottom: 85px;
+  }
+
+  /* RESUME */
+  .resumeContainer {
+    margin-bottom: 75px;
+
+  }
 }
 
 /* -----------------------------------------------------------DESKTOP STYLING----------------------------------------------------------- */
 @media only screen and (min-width: 1024px) {
+/* NAVBAR */
+.navbar {
+  font-size: 2vw;
+}
+
+/* HEADER */
+.header {
+  font-size: 5vh;
+}
 
   /* ABOUT */
   .about-contents-container {
     flex-direction: row;
   }
 
-  .navbar {
-    font-size: 2vw;
-  }
-
   .about-textbox {
-    margin: 0 20px;
-    font-size: 30px;
+    margin: 0 40px;
   }
 
   /* PORTFOLIO */
@@ -281,4 +309,12 @@ label {
   .project-description {
     font-size: 2vw;
   }
+
+  /* RESUME */
+  .resume-container {
+    height: 50vh;
+    margin: 0px;
+  }
 }
+
+
