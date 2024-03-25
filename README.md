@@ -11,7 +11,7 @@ This is my portfolio I built using React! It is designed to showcase my skills a
 * How to work with props
 * and more
 
-You can view my deployed portfolio here:
+You can view my deployed portfolio here: https://camillebagnaniportfolio.netlify.app/
 
 ## Installation
 Vite: https://www.npmjs.com/package/vite
